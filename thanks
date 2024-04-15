@@ -1,5 +1,5 @@
 #!/bin/bash
 
-RESPONCE=("You're welcome!" "You are welcome!" "Sure thing!" "No worries" "No problem!")
+RESPONSE=("You're welcome!" "You are welcome!" "Sure thing!" "No worries" "No problem!")
 
-echo "${RESPONCE[$RANDOM%${#RESPONCE[@]}]}"
+echo "${RESPONSE[$RANDOM%${#RESPONSE[@]}]}"

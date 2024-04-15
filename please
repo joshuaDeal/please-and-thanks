@@ -1,0 +1,13 @@
+#!/bin/bash
+
+RESPONCE=("Sure thing!" "No problem!" "Absolutely!" "Right away!")
+
+if [[ $@ == '' ]] ; then
+	echo "What can I do for you?"
+	read CMD
+	echo "${RESPONCE[$RANDOM%${#RESPONCE[@]}]}"
+	exec $CMD
+else
+	echo "${RESPONCE[$RANDOM%${#RESPONCE[@]}]}"
+	exec $@
+fi
